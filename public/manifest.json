@@ -10,12 +10,11 @@
   ],
   "host_permissions": [
     "*://notion.so/*",
-    "*://www.notion.so/*",
-    "*://www.google.com/*"
+    "*://www.notion.so/*"
   ],
   "icons": {
-    "16": "icon128.png",
-    "48": "icon128.png",
+    "16": "icon16.png",
+    "48": "icon48.png",
     "128": "icon128.png"
   },
   "action": {
