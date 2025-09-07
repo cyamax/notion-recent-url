@@ -1,4 +1,4 @@
-# <img src="public/icon128.png" width="45" align="left"> Notion Recent Files Pro
+# <img src="public/icon128.png" width="45" align="left"> Notion Recent URL
 
 Advanced Chrome Extension for managing recently accessed Notion pages and databases with powerful search, favorites, and smart organization features.
 

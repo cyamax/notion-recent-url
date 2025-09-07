@@ -1,15 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Notion Recent Files Pro",
+  "name": "Notion Recent URL",
   "version": "2.0",
   "description": "Advanced recent files manager for Notion with search, favorites, and smart features.",
   "permissions": [
     "history",
     "favicon"
-  ],
-  "host_permissions": [
-    "*://notion.so/*",
-    "*://www.notion.so/*"
   ],
   "icons": {
     "16": "icon16.png",
