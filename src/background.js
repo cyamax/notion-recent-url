@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const seenUrls = new Set();
 
       historyItems.forEach(item => {
-        if (item.url.startsWith('https://www.notion.so') && item.title && item.title !== 'Notion') {
+        if ((item.url.startsWith('https://www.notion.so') || item.url.startsWith('https://notion.so')) && item.title && item.title !== 'Notion') {
           // URL から引数を削除
           const urlWithoutParams = new URL(item.url).origin + new URL(item.url).pathname;
 
