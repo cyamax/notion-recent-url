@@ -5,7 +5,6 @@
   "description": "Advanced recent files manager for Notion with search, favorites, and smart features.",
   "permissions": [
     "history",
-    "storage",
     "favicon"
   ],
   "host_permissions": [
