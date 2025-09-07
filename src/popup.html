@@ -9,21 +9,23 @@
   <div class="container">
     <!-- 検索・ソートセクション -->
     <div class="controls-section">
-      <div class="search-container">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"/>
-          <path d="m21 21-4.35-4.35"/>
-        </svg>
-        <input type="text" id="searchInput" placeholder="Search pages and databases..." />
-      </div>
-      
-      <div class="sort-container">
-        <select id="sortSelect" class="sort-select">
-          <option value="recent">最新順</option>
-          <option value="frequent">アクセス頻度順</option>
-          <option value="alphabetical">アルファベット順</option>
-          <option value="pinned">ピン留め優先</option>
-        </select>
+      <div class="controls-row">
+        <div class="search-container">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search pages and databases..." />
+        </div>
+        
+        <div class="sort-container">
+          <select id="sortSelect" class="sort-select">
+            <option value="recent">最新順</option>
+            <option value="frequent">アクセス頻度順</option>
+            <option value="alphabetical">アルファベット順</option>
+            <option value="pinned">ピン留め優先</option>
+          </select>
+        </div>
       </div>
     </div>
 
