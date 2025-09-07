@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Notion Recent Files</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 検索・ソートセクション -->
+    <div class="controls-section">
+      <div class="search-container">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search pages and databases..." />
+      </div>
+      
+      <div class="sort-container">
+        <select id="sortSelect" class="sort-select">
+          <option value="recent">最新順</option>
+          <option value="frequent">アクセス頻度順</option>
+          <option value="alphabetical">アルファベット順</option>
+          <option value="pinned">ピン留め優先</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- タブナビゲーション -->
+    <div class="tabs">
+      <div class="tab active" id="getFilesButton_all">
+        <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        ALL
+      </div>
+      <div class="tab" id="getFilesButton_pages">
+        <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h7"/>
+        </svg>
+        Pages
+      </div>
+      <div class="tab" id="getFilesButton_databases">
+        <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+        </svg>
+        Databases
+      </div>
+      <div class="tab" id="getFilesButton_favorites">
+        <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+        </svg>
+        Favorites
+      </div>
+    </div>
+
+    <!-- ファイル一覧 -->
+    <div class="history-list" id="fileList">
+      <!-- Files will be loaded here -->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

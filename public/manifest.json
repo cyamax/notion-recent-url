@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Notion Recent Files Pro",
+  "version": "2.0",
+  "description": "Advanced recent files manager for Notion with search, favorites, and smart features.",
+  "permissions": [
+    "history",
+    "storage",
+    "favicon"
+  ],
+  "host_permissions": [
+    "*://notion.so/*",
+    "*://www.notion.so/*",
+    "*://www.google.com/*"
+  ],
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
